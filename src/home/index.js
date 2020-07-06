@@ -17,6 +17,25 @@ class HomePage extends Component{
         };
     }
 
+
+ render(){
+    console.log(this.state.data);
+   return (
+   	<div className="home">
+	   	<HomePagePart1 />
+	   	<HomePagePart2 />
+	   	<HomePagePart3 />
+	   	<HomePagePart4 />
+   </div>
+   )
+ } 
+}
+export default HomePage;
+
+
+
+
+/**
 	receivedData() {
 	    axios
 	        .get(`http://localhost:8000/api/dummy`)
@@ -33,16 +52,4 @@ class HomePage extends Component{
         this.receivedData()
     }
 
- render(){
-    console.log(this.state.data);
-   return (
-   	<div className="home">
-	   	<HomePagePart1 />
-	   	<HomePagePart2 />
-	   	<HomePagePart3 />
-	   	<HomePagePart4 />
-   </div>
-   )
- } 
-}
-export default HomePage;
+**/
